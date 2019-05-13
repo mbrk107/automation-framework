@@ -1,4 +1,3 @@
-
 import os
 import pathlib
 
@@ -6,14 +5,14 @@ import requests
 from bs4 import BeautifulSoup
 
 MAIN_PAGE = "http://mail-archives.apache.org/mod_mbox/maven-users/"
-year = input("\n Enter year:")
+year = input("Enter year:")
 
 def get_page(url):
     proxies = {
         "http": "16.167.28.210:8080",
         "https": "16.167.28.210:8080"
     }
-    rq = requests.get(url, timeout=50, proxies=proxies)
+    rq = requests.get(url, timeout=15)
     if not rq.ok:
         raise IOError("Failed to fetch requested url: {0}.\n Status: {1}".format(url, rq.status))
     return rq.content
