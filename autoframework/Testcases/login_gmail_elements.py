@@ -1,5 +1,5 @@
 # ID's for login GMAIL
-uname_id =  'identifierI'
+uname_id =  'identifierId'
 
 
 # NAMES for login GMAIL
