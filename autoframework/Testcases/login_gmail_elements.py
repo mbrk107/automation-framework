@@ -6,5 +6,5 @@ uname_id =  'identifierId'
 passw_name = 'password'
 
 # XPATHS for login GMAIL
-uname_next_xpath = '//*[@id="identifierNext"]/content'
-password_next_xpath = '//*[@id="passwordNext"]/content'
+uname_next_xpath = '//*[@id="identifierNext"]/span/span'
+password_next_xpath = '//*[@id="passwordNext"]/span/span'
